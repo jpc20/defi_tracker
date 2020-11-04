@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    TEST
+    <h1 class="text-center mb-3">Defi Projects</h1>
+    {% if project_list %}
+        {% for project in project_list %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="lead">{{project.name }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No Projects avaialble</p>
+    {% endif %}
 {% endblock %}
