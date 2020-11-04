@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center">
+    <div class="card-body">
+        <h1>Welcome to Defi Tracker</h1>
+        <p>practice using Python/Django</p>
+        <a href="{% url 'defi:index' %}" class="btn btn-dark">View All Projects</a>
+    </div>
+</div>
+{% endblock %}
